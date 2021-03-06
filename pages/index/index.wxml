@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <view> 我是sub</view>
+</view>
