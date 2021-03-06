@@ -1,4 +1,5 @@
 <!--index.wxml-->
 <view class="container">
   <view> 我是sub</view>
+  <button bindtap="toLogs">toLogs</button>
 </view>

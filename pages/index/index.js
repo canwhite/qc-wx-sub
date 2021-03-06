@@ -1,13 +1,19 @@
 // index.js
 // 获取应用实例
 const app = getApp()
-
+const pdata = require("../../config")
 Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  toLogs(){
+    console.log('----pdata',pdata);
+    wx.navigateTo({
+      url: `${pdata.path}/pages/logs/logs`,
+    })
   },
   // 事件处理函数
   bindViewTap() {
